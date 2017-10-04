@@ -4,20 +4,14 @@ import java.util.Scanner;
         public static void main(String[] args){
 
             Scanner keyboard = new Scanner(System.in);
-            String name ="name";
-            System.out.println("Name:");
+            String name ="";
+            System.out.println("Please type your Name:");
             name = keyboard.nextLine();
 
-
+//Calling string name from methods
             System.out.println(helloEnglish(name));
-
-
             System.out.println(helloFrench(name));
-
-
             System.out.println(helloTwi(name));
-
-
             System.out.println(helloAfaanoromo(name));
 
 
@@ -25,27 +19,32 @@ import java.util.Scanner;
         }
 
 
-
+        //English method
         public static String helloEnglish(String name) {
 
-            return "Hello, "+name+"!";
+            return "English: "+"Hello, "+name+"!";
 
 
         }
+        //French Method
 
         public static String helloFrench(String name) {
 
-            return "Bonjour, "+name+"!";
+            return "French: "+"Bonjour, "+name+"!";
 
         }
+        //Twi Method
+
         public static String helloTwi(String name) {
 
-            return "Mahai, "+name+"!";
+            return "Twi: "+"Mahai, "+name+"!";
 
         }
+        //Afaanoromo Method
+
         public static String helloAfaanoromo(String name) {
 
-            return "Akam, "+name+"!";
+            return "Afannoromo: "+"Akam, "+name+"!";
 
         }
 
